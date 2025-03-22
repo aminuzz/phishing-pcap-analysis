@@ -41,9 +41,12 @@ In this section, I have included some screenshots showing parts of the **.pcap f
 
 ## 🚨 Disclaimer
 
-⚠️ **Disclaimer**: This project was completed as part of my coursework for **Codepath** for their CYB102 course. The steps and methodology are shared for educational purposes only. I encourage you to explore and learn the concepts involved, but please refrain from directly using this project as a solution for assignments. Learning and practicing the underlying principles is key to gaining a deeper understanding.
+⚠️ **Disclaimer**: This project was completed as part of my coursework for CodePath's CYB102 course. The steps and methodology shared here are intended for educational purposes and to inspire learning. I encourage you to explore and understand the concepts involved, but please refrain from directly using this project as a solution for assignments. Practicing and applying these principles independently is key to mastering the material.
 
-**Important**: Due to the potential risks associated with the **.pcap** files containing malware, I advise running these files only in a **protected virtual environment** to avoid security risks. I recommend using tools such as **Wireshark** or **tcpdump** for analysis without executing any associated files.
+## ⚠️ Important Cybersecurity Note
+This repository contains `.pcap` files that may include malware. To ensure your safety, I strongly recommend analyzing these files only in a protected virtual environment. Tools like Wireshark or tcpdump can be used for analysis without executing any associated files. Always prioritize security when working with potentially malicious data.
+
+
 
 ## 🔧 Technologies Used
 
@@ -51,6 +54,13 @@ In this section, I have included some screenshots showing parts of the **.pcap f
 - **SMTP filters**: Used to isolate email traffic and detect phishing attempts.
 - **.pcap file analysis**: Identifying malicious IPs and attack origins from network traffic.
 - **.eml file examination**: Extracting and analyzing email contents for signs of phishing.
+
+
+### ✔️ Learning Outcomes
+- Gained hands-on experience with analyzing network traffic using Wireshark and tcpdump.
+- Learned to identify malicious patterns in `.pcap` files.
+- Strengthened understanding of cybersecurity principles, including safe analysis practices.
+
 
 ## 🎉 Shoutout to CodePath
 
