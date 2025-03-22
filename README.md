@@ -41,7 +41,7 @@ In this section, I have included some screenshots showing parts of the **.pcap f
 
 ## 🚨 Disclaimer
 
-⚠️ **Disclaimer**: This project was completed as part of my coursework for **[Course Name]** at **[School/Platform Name]**. The steps and methodology are shared for educational purposes only. I encourage you to explore and learn the concepts involved, but please refrain from directly using this project as a solution for assignments. Learning and practicing the underlying principles is key to gaining a deeper understanding.
+⚠️ **Disclaimer**: This project was completed as part of my coursework for **Codepath** for their CYB102 course. The steps and methodology are shared for educational purposes only. I encourage you to explore and learn the concepts involved, but please refrain from directly using this project as a solution for assignments. Learning and practicing the underlying principles is key to gaining a deeper understanding.
 
 **Important**: Due to the potential risks associated with the **.pcap** files containing malware, I advise running these files only in a **protected virtual environment** to avoid security risks. I recommend using tools such as **Wireshark** or **tcpdump** for analysis without executing any associated files.
 
@@ -52,5 +52,12 @@ In this section, I have included some screenshots showing parts of the **.pcap f
 - **.pcap file analysis**: Identifying malicious IPs and attack origins from network traffic.
 - **.eml file examination**: Extracting and analyzing email contents for signs of phishing.
 
-## 🛠️ How to Run the Project
+## 🎉 Shoutout to CodePath
 
+A special thank you to **CodePath** for providing the curriculum and resources that helped guide my journey through this project. The skills and knowledge I gained through their **CYB102** course made this project possible and gave me hands-on experience in analyzing network traffic and detecting phishing attempts. 
+
+## 💬 Contact Information
+
+If you have any questions or want to discuss the project further, feel free to reach out to me on:
+- **LinkedIn**: [https://www.linkedin.com/in/aminuz-zaman/](https://www.linkedin.com/in/aminuz-zaman/)
+- **Twitter**: [@YourTwitterHandle](https://twitter.com/your-handle)
