@@ -54,10 +54,13 @@ In this section, I have included some screenshots showing parts of the **.pcap f
 
 ## 🎉 Shoutout to CodePath
 
-A special thank you to **CodePath** for providing the curriculum and resources that helped guide my journey through this project. The skills and knowledge I gained through their **CYB102** course made this project possible and gave me hands-on experience in analyzing network traffic and detecting phishing attempts. 
+A special thank you to **CodePath** for providing the curriculum and resources that helped guide my journey through this project. The skills and knowledge I gained through their **CYB102** course made this project possible and gave me hands-on experience in analyzing network traffic and detecting phishing attempts. I've included a link to their website below if you'd like to learn more. They offer free courses designed to help you prepare for a career in tech, along with career guidance, mentorship, and a supportive community to help you succeed in the industry.
+
+[Check out Codepath's website](https://www.codepath.org)
 
 ## 💬 Contact Information
 
 If you have any questions or want to discuss the project further, feel free to reach out to me on:
 - **LinkedIn**: [https://www.linkedin.com/in/aminuz-zaman/](https://www.linkedin.com/in/aminuz-zaman/)
-- **Twitter**: [@YourTwitterHandle](https://twitter.com/your-handle)
+- **Instagram**: [https://www.instagram.com/aminuzzz/](https://www.instagram.com/aminuzzz/) 
+- **Email**: [aminuzzaman19@gmail.com](mailto:aminuzzaman19@gmail.com)
