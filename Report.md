@@ -4,7 +4,7 @@
 
 ---
 
-## Executive Summary
+## Summary
 This investigation analyzed captured SMTP network traffic (.pcap files) to identify phishing or extortion activity.  
 Malicious messages originated from **10.6.1.104**.  
 Other messages contained Outlook `winmail.dat` files that decoded to harmless formatting icons.  
@@ -14,7 +14,7 @@ All analysis was performed inside an isolated virtual machine.
 
 ## Methodology
 1. Opened PCAPs in **Wireshark**.  
-2. Filtered for `smtp` and `smtp.data`.  
+2. Filtered for `smtp` and `smtp.data.fragments`.  
 3. Followed TCP streams to reconstruct full emails.  
 4. Inspected MIME parts for `Content-Type`, filenames, and base64 sections.  
 5. Extracted and decoded `winmail.dat` attachments using **tnef** inside a VM.
@@ -36,13 +36,18 @@ All analysis was performed inside an isolated virtual machine.
 
 ### PCAP A – Outlook TNEF Attachment
 Wireshark view of SMTP traffic showing the encoded `winmail.dat` message:
-![SMTP traffic](Screenshots/Screenshot_2025-11-11_151036.png)
+<img width="1910" height="889" alt="image" src="https://github.com/user-attachments/assets/6f24259b-eb53-41b8-9e0c-ad9c34f3d447" />
+
+
 
 Thunderbird rendering of the same message with the visible `winmail.dat` attachment:
-![Thunderbird message](Screenshots/Screenshot_2025-11-11_145546.png)
+<img width="1910" height="920" alt="image" src="https://github.com/user-attachments/assets/e23a6420-9fc5-4e31-ac9d-587678ec48d9" />
+
 
 Decoded `winmail.dat` revealed only an Outlook formatting icon:
-![Extracted icon](Screenshots/Screenshot_2025-11-11_153330.png)
+<img width="1909" height="884" alt="image" src="https://github.com/user-attachments/assets/2420afbb-64b7-421f-ada0-96f3eae4fbbf" />
+
+
 
 **Result:** No malicious payload; benign RTF formatting data.
 
@@ -50,16 +55,18 @@ Decoded `winmail.dat` revealed only an Outlook formatting icon:
 
 ### PCAP B – No Significant Activity
 No executable or suspicious attachments identified.  
-![SMTP DATA fragments](Screenshots/Screenshot_2025-11-11_150831.png)
+<img width="1915" height="883" alt="image" src="https://github.com/user-attachments/assets/08afe9ed-c927-46e3-aa5e-a74d7afa4317" />
+
 
 ---
 
 ### PCAP C – Primary Malicious Actor
 SMTP traffic from **10.6.1.104** contained multiple extortion-style messages:
-![Malicious IP traffic](Screenshots/Screenshot_2025-11-11_155416.png)
+<img width="1909" height="885" alt="image" src="https://github.com/user-attachments/assets/0db53a97-0a3b-45ba-beac-227d1079127d" />
 
 Thunderbird view of one of the phishing/extortion emails:
-![Extortion email](Screenshots/Screenshot_2025-11-11_151551.png)
+<img width="1908" height="878" alt="image" src="https://github.com/user-attachments/assets/07df2c8c-bba1-46f2-b331-0ceb165b2996" />
+
 
 **Assessment:** Confirmed malicious source; phishing/extortion campaign traced to `10.6.1.104`.
 
@@ -94,4 +101,3 @@ This project demonstrates practical email-forensics workflow and documentation.
 
 ---
 
-*© 2025 Aminuz Zaman — Phishing / SMTP Forensic Report*
