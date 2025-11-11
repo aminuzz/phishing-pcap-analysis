@@ -1,76 +1,111 @@
-# 🕵️‍♂️🔍 phishing-pcap-analysis 📧⚠️
+# 🕵️‍♂️ phishing-pcap-analysis  
+📧 **Network Forensics & Phishing Detection using Wireshark**
 
-This project focuses on analyzing **.pcap** files to identify phishing attacks and Windows malware. By analyzing network traffic captured in **.pcap** files, I identified malicious IP addresses, examined phishing email subject lines, and extracted valuable information from **.eml** files to understand the full scope of the attack. 
+---
 
-## 🧑‍💻 Project Overview
+## 📘 Overview  
+This project demonstrates the process of analyzing captured network traffic (**.pcap files**) to detect and investigate phishing attacks and Windows malware.  
+By inspecting **SMTP and email traffic** in Wireshark, I identified **malicious IP addresses**, examined **phishing email headers and subject lines**, and extracted indicators of compromise (IOCs) to understand the full attack chain.  
 
-In this project, I analyzed **network traffic** captured in **.pcap files** to detect phishing attacks and malware. Using **Wireshark**, I employed **SMTP filters** to inspect email-related traffic and trace the origin of malicious activities. Through this process, I developed key skills in **network analysis**, **phishing detection**, and **cybersecurity forensics**.
+💡This analysis was performed in a **secure virtual environment** to ensure safe handling of potentially malicious data.
 
-### Key Learnings:
-- Understanding the methods used by attackers to deliver phishing emails.
-- Identifying malicious patterns in email traffic.
-- Analyzing network traffic to trace the source of attacks.
+---
 
-This project provided me with hands-on experience in **cybersecurity analysis** and reinforced the importance of **network forensics** in identifying and mitigating threats.
+## 🧩 Objectives  
+- Inspect `.pcap` files to identify phishing and malware activity  
+- Analyze **SMTP traffic** and extract suspicious email details  
+- Identify and document **malicious IP addresses**  
+- Examine **email subject lines** and message headers for phishing patterns  
+- Trace the **origin and flow** of the phishing attack  
+- Strengthen skills in **Wireshark, traffic analysis, and network forensics**
 
-## 🚀 Project Objective
+---
 
-The goal of this project was to identify and analyze **phishing attacks** using **Wireshark** and **.pcap files**. Through detailed analysis, I identified malicious **IP addresses**, examined **phishing email content**, and traced the origin of the attack. By analyzing network traffic captured from the email flow, I was able to better understand the **cybersecurity** risks posed by these kinds of attacks.
+## ⚙️ Tools & Technologies  
 
-## 🧑‍💻 Methodology
+| Tool / Service | Purpose |
+|-----------------|----------|
+| **Wireshark** | Capture and analyze network packets |
+| **SMTP Filters** | Isolate email traffic for phishing detection |
+| **.pcap Files** | Network traffic data for forensic analysis |
+| **.eml Files** | Email message data for header/content inspection |
+| **Virtual Machine Environment** | Safe, isolated workspace for malware-related analysis |
 
-The following steps were taken to complete the project:
+---
 
-1. **Load and Inspect .pcap Files**: I started by opening the **.pcap files** in **Wireshark** to explore the network traffic.
-2. **Apply SMTP Filters**: To isolate email traffic, I used **SMTP filters** in Wireshark, narrowing down the focus to emails and related activities.
-3. **Identify Suspicious IP Addresses**: By analyzing the **network traffic**, I identified IP addresses involved in malicious activities related to phishing.
-4. **Analyze Email Content**: I examined the **subject lines** of phishing emails, identifying suspicious patterns and potential indicators of phishing attacks.
-5. **Trace the Attack's Origin**: Using the data gathered, I traced the origin of the phishing attacks to specific IP addresses, helping to understand how the attack was initiated.
+## 🧱 Methodology  
 
-## 📸 Screenshots and Analysis
+### 1️⃣ Load and Inspect .pcap Files  
+Opened captured traffic files in Wireshark to observe all packets and protocols.  
 
-In this section, I have included some screenshots showing parts of the **.pcap file** analysis, focusing on **malicious IP addresses** and **suspicious email subject lines**. These screenshots show examples of how I used **Wireshark** to filter out relevant email traffic and identify potential threats.
+### 2️⃣ Apply SMTP Filters  
+Used filters such as `smtp` and `smtp.data` to narrow focus on email exchanges.  
 
-> **Note:** The actual **.pcap files** and **.eml files** are not included in this repository to protect against potential misuse. I encourage users to apply the methods described in the project to practice their own analysis.
+### 3️⃣ Identify Suspicious IP Addresses  
+Traced network flows and identified IP addresses associated with malicious senders or external hosts.  
 
-## 📂 Files Included
+### 4️⃣ Analyze Email Content  
+Reviewed subject lines and message headers in `.eml` files to identify phishing lures and social engineering tactics.  
 
-- **README.md**: This file, providing an overview of the project.
-- **Report.pdf**: A detailed breakdown of the project methodology, findings, and conclusions. This document contains further analysis of the **.pcap files** and **email content**.
-- **Screenshots**: A folder containing relevant screenshots and images of the **.pcap** analysis.
+### 5️⃣ Trace the Attack Origin  
+Mapped connections between client and external IPs to determine how phishing emails entered the network.  
 
-## 🚨 Disclaimer
+---
 
-⚠️ **Disclaimer**: This project was completed as part of my coursework for CodePath's CYB102 course. The steps and methodology shared here are intended for educational purposes and to inspire learning. I encourage you to explore and understand the concepts involved, but please refrain from directly using this project as a solution for assignments. Practicing and applying these principles independently is key to mastering the material.
+## 📸 Screenshots & Findings  
+Screenshots in this repository show:  
+- Extracted **phishing email traffic** from `.pcap` files  
+- Identification of **malicious IP addresses**  
+- Inspection of **email subject lines** and **SMTP conversations**  
 
-## ⚠️ Important Cybersecurity Note
-This repository contains `.pcap` files that may include malware. To ensure your safety, I strongly recommend analyzing these files only in a protected virtual environment. Tools like Wireshark or tcpdump can be used for analysis without executing any associated files. Always prioritize security when working with potentially malicious data.
+> ⚠️ **Note:** The original `.pcap` and `.eml` files are excluded to prevent misuse.  
+> You can apply the same techniques described here on safe sample datasets to replicate the analysis.  
 
+---
 
+## 📂 Repository Contents  
 
-## 🔧 Technologies Used
+| File / Folder | Description |
+|----------------|--------------|
+| `README.md` | Project overview and documentation |
+| `Report.pdf` | Detailed findings, methodology, and conclusions |
+| `Screenshots/` | Images from Wireshark analysis and results |
 
-- **Wireshark**: For analyzing and filtering network traffic captured in **.pcap files**.
-- **SMTP filters**: Used to isolate email traffic and detect phishing attempts.
-- **.pcap file analysis**: Identifying malicious IPs and attack origins from network traffic.
-- **.eml file examination**: Extracting and analyzing email contents for signs of phishing.
+---
 
+## ⚠️ Important Cybersecurity Note  
+This project involves handling network captures that may contain malware or malicious payloads.  
+Always perform `.pcap` analysis inside a **virtualized and isolated environment**.  
+Use tools like **Wireshark** or **tcpdump** for analysis only — never open attachments or execute extracted files.
 
-### ✔️ Learning Outcomes
-- Gained hands-on experience with analyzing network traffic using Wireshark and tcpdump.
-- Learned to identify malicious patterns in `.pcap` files.
-- Strengthened understanding of cybersecurity principles, including safe analysis practices.
+---
 
+## 🧾 Outcome  
+✅ Successfully analyzed phishing-related network traffic using Wireshark.  
+✅ Identified malicious IPs, email subject patterns, and attack origin.  
+✅ Strengthened practical understanding of **cybersecurity forensics** and **network analysis techniques**.  
 
-## 🎉 Shoutout to CodePath
+---
 
-A special thank you to **CodePath** for providing the curriculum and resources that helped guide my journey through this project. The skills and knowledge I gained through their **CYB102** course made this project possible and gave me hands-on experience in analyzing network traffic and detecting phishing attempts. I've included a link to their website below if you'd like to learn more. They offer free courses designed to help you prepare for a career in tech, along with career guidance, mentorship, and a supportive community to help you succeed in the industry.
+## 🚀 Future Enhancements  
+- Automate IOC extraction using Python or Scapy  
+- Integrate with SIEM tools (e.g., Splunk) for alert correlation  
+- Expand analysis to include HTTP/HTTPS phishing detection  
+- Develop a dashboard to visualize attack flow and IOCs  
 
-[Check out Codepath's website](https://www.codepath.org)
+---
 
-## 💬 Contact Information
+## 🧩 Skills Demonstrated  
+- Network traffic analysis with Wireshark  
+- Email header and SMTP investigation  
+- Malware/phishing forensics  
+- IP tracing and indicator correlation  
+- Secure analysis environment configuration  
 
-If you have any questions or want to discuss the project further, feel free to reach out to me on:
-- **LinkedIn**: [https://www.linkedin.com/in/aminuz-zaman/](https://www.linkedin.com/in/aminuz-zaman/)
-- **Instagram**: [https://www.instagram.com/aminuzzz/](https://www.instagram.com/aminuzzz/) 
-- **Email**: [aminuzzaman19@gmail.com](mailto:aminuzzaman19@gmail.com)
+---
+
+## 💬 Contact  
+**Aminuz Zaman**  
+📎 [LinkedIn](https://www.linkedin.com/in/aminuz-zaman/)  
+📧 [aminuzzaman19@gmail.com](mailto:aminuzzaman19@gmail.com)  
+📸 [Instagram](https://www.instagram.com/aminuzzz/)  
