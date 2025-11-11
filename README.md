@@ -104,8 +104,4 @@ Use tools like **Wireshark** or **tcpdump** for analysis only — never open att
 
 ---
 
-## 💬 Contact  
-**Aminuz Zaman**  
-📎 [LinkedIn](https://www.linkedin.com/in/aminuz-zaman/)  
-📧 [aminuzzaman19@gmail.com](mailto:aminuzzaman19@gmail.com)  
-📸 [Instagram](https://www.instagram.com/aminuzzz/)  
+
