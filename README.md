@@ -68,8 +68,7 @@ Screenshots in this repository show:
 | File / Folder | Description |
 |----------------|--------------|
 | `README.md` | Project overview and documentation |
-| `Report.pdf` | Detailed findings, methodology, and conclusions |
-| `Screenshots/` | Images from Wireshark analysis and results |
+| `Report.md` | Detailed findings, methodology, and conclusions |
 
 ---
 
