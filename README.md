@@ -39,7 +39,7 @@ By inspecting **SMTP and email traffic** in Wireshark, I identified **malicious 
 Opened captured traffic files in Wireshark to observe all packets and protocols.  
 
 ### 2️⃣ Apply SMTP Filters  
-Used filters such as `smtp` and `smtp.data` to narrow focus on email exchanges.  
+Used filters such as `smtp` and `smtp.data.fragments` to narrow focus on email exchanges.  
 
 ### 3️⃣ Identify Suspicious IP Addresses  
 Traced network flows and identified IP addresses associated with malicious senders or external hosts.  
