@@ -1,6 +1,5 @@
 # PHISHING / SMTP FORENSIC REPORT
-**By Aminuz Zaman**  
-**November 2025**
+
 
 ---
 
