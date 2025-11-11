@@ -27,7 +27,7 @@ All analysis was performed inside an isolated virtual machine.
 | **Wireshark** | Capture and analysis of SMTP traffic |
 | **Thunderbird** | Visual reconstruction of messages |
 | **TNEF Viewer / tnef** | Decode Outlook `winmail.dat` attachments |
-| **Linux VM** | Safe analysis environment |
+| **Kali Linux VM** | Safe analysis environment |
 | **Base64 Decoder & SHA256** | Extract and hash attachments |
 
 ---
@@ -90,7 +90,7 @@ Similar `winmail.dat` formatting artifacts; no malware detected.
 - Preserve PCAPs and extracted files with SHA256 hashes.  
 - Block or monitor traffic to/from `10.6.1.104`.  
 - Keep all decoding inside isolated environments.  
-- When publishing to GitHub, omit PCAPs and redact any PII.
+
 
 ---
 
