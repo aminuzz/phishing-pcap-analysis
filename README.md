@@ -70,12 +70,8 @@ Screenshots in this repository show:
 | `README.md` | Project overview and documentation |
 | `Report.md` | Detailed findings, methodology, and conclusions |
 
----
 
-## ⚠️ Important Cybersecurity Note  
-This project involves handling network captures that may contain malware or malicious payloads.  
-Always perform `.pcap` analysis inside a **virtualized and isolated environment**.  
-Use tools like **Wireshark** or **tcpdump** for analysis only — never open attachments or execute extracted files.
+---
 
 ---
 
