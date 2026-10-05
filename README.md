@@ -58,8 +58,6 @@ Screenshots in this repository show:
 - Identification of **malicious IP addresses**  
 - Inspection of **email subject lines** and **SMTP conversations**  
 
-> ⚠️ **Note:** The original `.pcap` and `.eml` files are excluded to prevent misuse.  
-> You can apply the same techniques described here on safe sample datasets to replicate the analysis.  
 
 ---
 
@@ -69,6 +67,7 @@ Screenshots in this repository show:
 |----------------|--------------|
 | `README.md` | Project overview and documentation |
 | `Report.md` | Detailed findings, methodology, and conclusions |
+| `pcap.zip` | PCAP files for analysis |
 
 
 ---
