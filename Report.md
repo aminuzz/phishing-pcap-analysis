@@ -81,7 +81,7 @@ Similar `winmail.dat` formatting artifacts; no malware detected.
 |------|-------|-------|
 | **Malicious IP** | 10.6.1.104 | Origin of extortion messages |
 | **Benign Artifact** | winmail.dat → info-16.png | Outlook formatting icon |
-| **Base64 Strings** | Z2FsdW50 / VjF2MXRyMG4= | Possibly credentials – redact for public repo |
+| **Base64 Strings** | Z2FsdW50 / VjF2MXRyMG4= | Possibly credentials |
 
 ---
 
